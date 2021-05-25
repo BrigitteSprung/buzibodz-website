@@ -5,7 +5,9 @@
 }
 /* Custom properties, update here for personal design */
 :root {
-  --ff-primary: 'Pattaya', sans-serif;
+  --ff-header: 'Pattaya', sans-serif;
+  --ff-primary: 'Lora', serif;
+  /* add more font variables */
   --ff-secondary: 'Lora', serif;
   --fw-reg: 400;
   --fw-bold: 700;
@@ -150,7 +152,229 @@ header {
         opacity: 1;
     }
 
-  
+    section {
+      padding: 5em 2em;
+    }
+    
+    img {
+      display: block;
+      max-width: 100%;
+    }
+    
+    strong {
+      font-weight: var(--fw-bold);
+    }
+    
+    :focus {
+      outline: 3px solid var(--clr-accent);
+      outline-offset: 3px;
+    }
+    /* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.5em 2.5em;
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+  /* Typography */
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+.section__title {
+  margin-bottom: 0.25em;
+}
+
+.section__title--intro {
+  font-weight: var(--fw-reg);
+}
+
+.section__title--intro strong {
+  display: block;
+  font-weight: var(--fw-bold);
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+  background: var(--clr-accent);
+  padding: .25em 1em;
+  font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+}
+.section__title--work{
+
+}
+.section__subtitle--work{
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+  margin-bottom: 1em;
+}  
+/* My Services Section */
+.my-services {
+  /* Add the color just in case the image does not load */
+  background-color: var(--clr-dark);
+  background-image: url(../img/services-bg.png);
+  background-size: cover;
+  /* reduces bg brightness */
+  /* background-blend-mode: multiply  */
+  color: var(--clr-light);
+  text-align: center;
+}
+
+.section__title--services {
+  color: var(--clr-accent);
+  position: relative;
+}
+
+/* Code for the linebreak */
+.section__title--services::after {
+  content: '';
+  display: block;
+  width: 3em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: var(--clr-light);
+  /* background: currentColor); */
+  opacity: 0.25;
+}
+
+.services {
+  margin-bottom: 4em;
+}
+
+.service {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .services {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service+.service {
+    margin-left: 2em;
+  }
+}
+
+/* About Me Section */
+.about-me {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.about-me__img {
+  box-shadow: var(--bs);
+}
+
+@media (min-width:600px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas:
+        "title img"
+        "subtitle img"
+        "text img";
+    grid-column-gap: 2em;
+  }
+
+  .section__title--about{
+    grid-area: title;
+  }
+
+  .section__subtitle--about {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    /* text can never go into the image */
+    padding-right: calc(200px + 2em);
+  }
+
+  .about-me__img {
+    grid-area: img;
+    position: relative;
+    z-index: 2;
+  }
+}
+/* Footer */
+
+.footer {
+  background: #111;
+  color: var(--clr-accent);
+  text-align:center;
+  padding: 2.5em 0;
+  font-size: var(--fs-h3);
+}
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__link {
+  font-weight: var(--fw-bold);
+}
+
+.footer__link:hover,
+.social-list__link:hover {
+  opacity: .7;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 0;
+  padding: 0;
+}
+
+.social-list__item {
+  margin: 0 .5em;
+}
+
+.social-list__link{
+  padding: .5em;
+}
+
   
   
   /* Animations */
