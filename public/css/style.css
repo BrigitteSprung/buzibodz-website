@@ -48,7 +48,7 @@ body {
 header {
     align-items: center;
     display: flex;
-    font-size: 1var(var(--fs-h1));
+    font-size: var(var(--fs-h1));
     height: 100vh;
     justify-content: center;
     overflow: hidden;
@@ -83,7 +83,7 @@ header {
     transform: rotateZ(-4deg);
     z-index: 0;
   }
-  
+
   .header-title, .header-subtitle {
     color: var(--clr-light);
   }
@@ -97,6 +97,7 @@ header {
   }
   
   .header-button {
+
     transform: translateZ(.1px);
     position: relative;
     z-index: 10;
@@ -124,6 +125,7 @@ header {
     animation-delay: 1.1s;
   }
   .header-button {
+    display: flex;
     border: 5px solid transparent;
     background: #aed6d1;
     color: #55706d;
@@ -131,23 +133,26 @@ header {
     padding: 15px 30px;
     overflow: hidden;
     width: 200px;
-    transition: all 1.2s, border 0.5s 1.2s, box-shadow 0.3s 1.5s;
+    transition: all 1.2s, border 0.5s 1.2s;
+    box-shadow: var(--bs);
     white-space: nowrap;
     /* text-indent: 23px; */
     font-weight: bold;
     justify-content: center;
+    justify-self: center;
+    margin: auto;
   }
   .header-button a {
     text-decoration: none;
     color: inherit;
   }
-  .header-button span {
+  /* .header-button span {
       display: inline-block;
       transform: translateX(300px);
       font-weight: normal;
       opacity: 0;
       transition: opacity 0.1s 0.5s, transform 0.4s 0.5s;
-  }
+  } */
   .header-button:hover {
       text-indent: 0;
       background: #55706d;
@@ -156,10 +161,10 @@ header {
       border: 10px solid #8dccc4;
       box-shadow: 3px 3px 2px rgba(black, 0.15);
   }
-  .header-button:hover span {
+  /* .header-button:hover span {
         transform: translateX(0);
         opacity: 1;
-  }
+  } */
 
     section {
       padding: 5em 2em;
