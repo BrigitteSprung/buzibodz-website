@@ -106,6 +106,8 @@
   <section class="my-work" id="my-work">
     <!-- Add IG stuff here -->
     <h1>Instagram plugin here</h1>
+<!-- Place <div> tag where you want the feed to appear -->
+  <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
   </section>
 	<!-- Footer -->
 	<footer class="footer">
@@ -134,8 +136,15 @@
 			
 		</ul>
 	</footer>
-    
-    
+<!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+<script type="text/javascript">
+  /* curator-feed-default-feed-layout */
+  (function(){
+  var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
+  i.src = "https://cdn.curator.io/published/348f46c2-192b-4db5-88d9-217baca4f2c9.js";
+  e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+  })();
+  </script>
      <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
 
