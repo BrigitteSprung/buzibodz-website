@@ -38,7 +38,7 @@
         <h1 class="header-title animate-pop-in">BuziBodz</h1>
         <h3 class="header-subtitle animate-pop-in">Clothing Studio</h3>
         <p class="header-button animate-pop-in"><a href="#about-me" class="button">
-          Find Out More <span>about us</span>
+          Find Out More
         </a></p>
       </section>
     </header>
@@ -85,7 +85,7 @@
   	<!-- About Me Section -->
 	<section class="about-me" id="about-me">
 
-		<h2 class="section__title section__title--about">Who I am</h2>
+		<h2 class="section__title section__title--about">Who we are</h2>
 		<p class="section__subtitle section__subtitle--about">Fashion Designer based out of <span>Port Elizabeth</span></p>
 
 
@@ -100,7 +100,7 @@
 		</div>
 
 		<!-- TODO: Find a better image here -->
-		<img src="img/brigittelong.JPG" alt="Brigitte smiling" class="about-me__img">
+		<img src="img/stockimage.jpg" alt="Empty Mannequin" class="about-me__img">
 	</section>
 
   <section class="my-work" id="my-work">
@@ -114,6 +114,43 @@
 
 
     </div>
+
+  </section>
+
+  <section class="contact-form" id="contact-form">
+   <h2>Contact Us</h2>
+   <!-- todo: Set up getform account -->
+   <form accept-charset="UTF-8" action="https://getform.io/f/{your-form-endpoint-goes-here}" method="POST" enctype="multipart/form-data"  target="_blank" id="wpform">
+      <div>
+         <label>Full Name</label>
+         <div>
+            <input  class="form-entry" type="text" name="first_name" placeholder="Enter your name and surname" required="required">
+         </div>
+      </div>
+      <br>
+      <div>
+         <label>Email address</label>
+         <div>
+            <input class="form-entry" type="email" name="email" placeholder="Enter your email address" required="required">
+         </div>
+      </div>
+      <br>
+      <div>
+         <label>Your Message</label>
+         <div>
+            <textarea class="form-entry message" type="text" name="message" placeholder="Enter your message" required="required"></textarea>
+         </div>
+      </div>
+      <div>
+         <label>Upload document:</label>
+         <input type="file" name="file" required="required">
+      </div>
+      <br>
+      <input type="hidden" name="utf8" value="✓">
+      <button  class="btn"type="submit">SUBMIT</button>
+   </form>
+
+
 
   </section>
 	<!-- Footer -->
