@@ -105,7 +105,16 @@
 
   <section class="my-work" id="my-work">
     <!-- Add IG stuff here -->
-    <h1>Instagram plugin here</h1>
+    <h2 class="section__title section__title--work">Instagram Feed</h2>
+    <div class="instagram-feed">
+      <!-- Todo: Make an api yourself. It can't be that hard -->
+<div class="embedsocial-hashtag" data-ref="e664f1aa4bc44dfe4c0852bbe448c9b6c7119e7f" >
+  <a class="feed-powered-by-es" href="https://embedsocial.com/products/embedfeed/" 
+  target="_blank" title="Powered by EmbedSocial">Powered by EmbedSocial<span>→</span></a></div>
+
+
+    </div>
+
   </section>
 	<!-- Footer -->
 	<footer class="footer">
@@ -134,15 +143,16 @@
 			
 		</ul>
 	</footer>
-    
-    
+  <!-- Embed social feed -->
+  <script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); 
+    js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js);}
+    (document, "script", "EmbedSocialHashtagScript"));</script>
      <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
-
 <script>
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
