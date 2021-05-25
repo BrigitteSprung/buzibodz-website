@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "bootstrap": "^5.0.1"
-  }
+  },
+  "name": "buzibodz-website",
+  "description": "Landing page for the local South African business BuziBodz",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrigitteSprung/buzibodz-website.git"
+  },
+  "author": "Brigitte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrigitteSprung/buzibodz-website/issues"
+  },
+  "homepage": "https://github.com/BrigitteSprung/buzibodz-website#readme"
 }
